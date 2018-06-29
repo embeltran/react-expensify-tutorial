@@ -1,9 +1,5 @@
 node_modules/
 public/dist/
-public/bundle.js
-public/bundle.js.map
-public/styles.css
-public/styles.css.map
 .env.test
 .env.development
 .DS_Store
