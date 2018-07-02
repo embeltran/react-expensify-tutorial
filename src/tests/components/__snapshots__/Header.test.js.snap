@@ -2,9 +2,18 @@
 
 exports[`should render Header correctly 1`] = `
 <header>
-  <h1>
-    Expensify
-  </h1>
+  <div
+    className="topSection"
+  >
+    <img
+      alt="logo"
+      className="App-logo"
+      src="logo.svg"
+    />
+    <h1>
+      Expensify
+    </h1>
+  </div>
   <p>
     <span>
       <NavLink
