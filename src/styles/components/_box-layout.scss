@@ -1,0 +1,33 @@
+.box-layout {
+    align-items: center;
+    background:url(/images/bg.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+.box-layout > div {
+    background: fade-out($color: white, $amount: .25);
+    border-radius: 15px;
+    text-align: center;
+    padding: $l-size $m-size;
+    width: 25rem;
+
+}
+.box-layout > div > h2 {
+    text-transform: uppercase;
+}
+.box-layout > div > p {
+    text-align: left;
+}
+.box-layout div > button {
+    border-radius: 20px;
+    padding: 4px 15px;
+    font-weight: bold;
+    line-height: 1;
+    
+}
+.box-layout div > button:hover{
+    color: #fff;
+}
