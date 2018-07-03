@@ -1,0 +1,29 @@
+
+.box-layout div > button, .btn-expense, form > button {
+    border-radius: 20px;
+    padding: 4px 15px;
+    font-weight: bold;
+    line-height: 1;
+    border: 0;
+    background: $blue;
+    color: $white;
+    font-size: $font-size-large;
+  }
+
+.box-layout div > button:hover, 
+.topSection button:hover, .btn-expense:hover, form > button:hover  {
+    color: $off-white;
+    text-decoration: none;
+}
+
+.btn-expense {
+    text-decoration: none;
+}
+ 
+.topSection button {
+    border: 0;
+    border: 0;
+    background: transparent;
+    color: #fff;
+    font-size: $font-size-large;
+}
