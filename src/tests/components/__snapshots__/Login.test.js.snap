@@ -1,10 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render Login correctly 1`] = `
-<div>
-  This is from my help component
-  <button>
-    login
-  </button>
+<div
+  className="box-layout"
+>
+  <div>
+    <h2>
+      expensify
+    </h2>
+    <p>
+      tag line
+    </p>
+    <button>
+      Login with Google
+    </button>
+  </div>
 </div>
 `;
