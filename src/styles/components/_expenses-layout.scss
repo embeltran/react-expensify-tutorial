@@ -1,32 +1,52 @@
-.expense-summary { 
-    background: #f7f7f7;
-}
+.expense-summary, .expense-page > div:first-of-type, .expense-edit > div:first-of-type, .expense-list-header { 
+    background: $bkg-white;
+    padding: $m-size; 
+} 
 .expense-summary > div > h2 {
     font-weight: normal;
 }
-/* .expense-item {  } */
+
+.expense-list-header {  
+    font-weight: bold;
+    font-size: $font-size-large;
+    display: flex;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+.expense-item {
+    border: 1px solid darken($color: $bkg-white, $amount: 7%);
+    padding: 0;
+}
 .expense-item strong {
     display: block;
     color:#000;
     text-transform: capitalize;
     margin-bottom: 3px;
 }
-
-.expense-item {
-    border:1px solid $black;
-    padding: 0;
-}
 .expense-item p {
-    border-top:1px solid $black;
+    border: 1px solid darken($color: $bkg-white, $amount: 7%);
     padding: $s-size;
     margin: 0;
 }
-
-.expense-item p:nth-child(even) {
-    background: #f2f2f2;
+.expense-item p span {
+    display: inline-block;
+    width: 33%;
 }
-/* .expensesFilters { } */
+.expense-item p span:nth-of-type(2) {
+    width: 34%;
+    text-align: center;
+}
+.expense-item p span:last-of-type {
+    text-align: right;
+}
+.expense-item p:nth-child(odd) {
+    background: darken($color: $white, $amount: 7%);
+}
+.expense-item p:nth-child(even) {
+    background: $white;
+}
 
+/* .expensesFilters { } */
 .expensesFilters > div {
     display: flex;
     flex-direction: column;  
@@ -41,18 +61,9 @@
       margin: $s-size 0; 
     }
   }
-  .expensesFilters > div > div > input, .expensesFilters > div > div > select , #createForm input {
-      border: 1px solid #cacccd;
+  .expensesFilters > div > div > input, .expensesFilters > div > div > select {
+      border: 1px solid darken($color: $bkg-white, $amount: 7%);
       height: 50px;
-      padding: $s-size;
-      font-size: $font-size-large;
-  }
-
-  #createForm textarea {
-    border: 1px solid #cacccd;
-      height: 10rem;
-      width: 40rem;
-      display: block;
       padding: $s-size;
       font-size: $font-size-large;
   }

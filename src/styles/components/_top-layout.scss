@@ -1,0 +1,32 @@
+
+
+.topSection {
+    background:$black;
+    color: $white;
+  }
+  .topSection  a {
+    font-size: $font-size-extraLarge;
+    text-decoration: none;
+    color: $white;
+  }
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+  }
+  
+  @keyframes App-logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  
+  .content-container, .expense-summary > div, .expensesFilters, .expense-item, #addExpenseForm, .editExpenseForm {
+    margin: 0 auto;
+    padding:  0 $m-size;
+    max-width: 80rem;
+  }
+  .topSection > .content-container > div {
+    align-items:  center;
+    display: flex;
+    justify-content: space-between;
+    padding: $s-size 0;
+  }

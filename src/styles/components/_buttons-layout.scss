@@ -1,5 +1,5 @@
 
-.box-layout div > button, .btn-expense, form > button {
+.box-layout div > button, .btn-expense, form button, .editExpenseForm > button  {
     border-radius: 20px;
     padding: 4px 15px;
     font-weight: bold;
@@ -11,7 +11,7 @@
   }
 
 .box-layout div > button:hover, 
-.topSection button:hover, .btn-expense:hover, form > button:hover  {
+.topSection button:hover, .btn-expense:hover, form button:hover  {
     color: $off-white;
     text-decoration: none;
 }
@@ -26,4 +26,8 @@
     background: transparent;
     color: #fff;
     font-size: $font-size-large;
+}
+
+.editExpenseForm > button { 
+    background: #888;
 }

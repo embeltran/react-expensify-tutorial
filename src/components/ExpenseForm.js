@@ -25,11 +25,11 @@ export default class ExpenseForm extends React.Component {
   };
   onAmountChange = (e) => {
     const amount = e.target.value;
-
     if (!amount || amount.match(/^\d{1,}(\.\d{0,2})?$/)) {
       this.setState(() => ({ amount }));
     }
   };
+  
   onDateChange = (createdAt) => {
     if (createdAt) {
       this.setState(() => ({ createdAt }));
@@ -55,9 +55,8 @@ export default class ExpenseForm extends React.Component {
   };
   render() {
     return (
-      <div id="createForm" className="content-container">
-        {this.state.error && <p>{this.state.error}</p>}
         <form onSubmit={this.onSubmit}>
+        {this.state.error && <p class="error">{this.state.error}</p>}
           <input
             type="text"
             placeholder="Description"
@@ -85,9 +84,10 @@ export default class ExpenseForm extends React.Component {
             onChange={this.onNoteChange}
           >
           </textarea>
-          <button>Add Expense</button>
+          <div>
+            <button>Save Expense</button>
+          </div>
         </form>
-      </div>
     )
   }
 }

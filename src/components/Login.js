@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { startLogin, loginEmail } from '../actions/auth';
+import { startLogin } from '../actions/auth';
 
 export const Login = ({ startLogin }) => (
   <div className="box-layout"> 

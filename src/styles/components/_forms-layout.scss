@@ -1,0 +1,32 @@
+#addExpenseForm form, .editExpenseForm form {
+    display: flex;
+    flex-direction: column;
+    margin-top: $s-size;
+    >* {
+      margin-bottom: $m-size;
+    }
+  }
+  
+  #addExpenseForm input, .editExpenseForm input {
+    border: 1px solid #cacccd;
+    height: 50px;
+    padding: $s-size;
+    font-size: $font-size-large;
+  }
+  #addExpenseForm > input, #addExpenseForm > select, #addExpenseForm > textarea, 
+  .editExpenseForm > input, .editExpenseForm > select, .editExpenseForm > textarea  {
+    display: block;
+    margin: $s-size 0;
+  }
+  #addExpenseForm textarea, .editExpenseForm textarea {
+    border: 1px solid #cacccd;
+    height: 10rem;
+    display: block;
+    padding: $s-size;
+    font-size: $font-size-large;
+  }
+  .error {
+    color: red;
+    font-style: italic;
+    margin: 0 0 $m-size 0;
+  }
